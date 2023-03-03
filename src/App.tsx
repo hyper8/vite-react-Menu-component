@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <h3>menu component</h3>
-      <Menu mode={"horizon"}>
-        <MenuItem index={0}>link 1</MenuItem>
-        <MenuItem index={1}>link 2</MenuItem>
-        <MenuItem index={2} className={'is-disabled'}>link 3</MenuItem>
-        <MenuItem index={3}>link 4</MenuItem>
+      <Menu mode={"horizon"} onSelect={(index) => {console.log(index)}}>
+        <MenuItem>link 1</MenuItem>
+        <MenuItem>link 2</MenuItem>
+        <MenuItem className={'is-disabled'}>link 3</MenuItem>
+        <MenuItem>link 4</MenuItem>
         <SubMenu title="dropdown">
           <MenuItem>dropdown1</MenuItem>
           <MenuItem>dropdown2</MenuItem>
