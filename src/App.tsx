@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <h3>menu component</h3>
-      <Menu defaultIndex={0} mode={"horizon"}>
+      <Menu mode={"horizon"}>
         <MenuItem index={0}>link 1</MenuItem>
         <MenuItem index={1}>link 2</MenuItem>
         <MenuItem index={2} className={'is-disabled'}>link 3</MenuItem>

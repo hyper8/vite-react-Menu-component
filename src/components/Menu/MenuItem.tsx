@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import { MenuContext } from './Menu'
 
 export interface MenuItemProps {
-  index : number;
+  index ?: number;
   style ?: CSSProperties;
   disabled ?: boolean;
   className ?: string;
